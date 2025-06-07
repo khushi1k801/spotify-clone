@@ -343,3 +343,65 @@ body {
     margin-top: -0.2rem;
     cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .music-player {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .album, .player, .controls {
+    width: 100%;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+
+  .controls-icons-option {
+    margin-left: 0;
+  }
+
+  .cards-container {
+    justify-content: center;
+  }
+}
+
+/* Mobile view (below 768px) */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .sticky-nav-options {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sticky-nav-icons {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav, .library {
+    padding: 1rem;
+  }
+
+  .album-options-icons {
+    display: none;
+  }
+}
